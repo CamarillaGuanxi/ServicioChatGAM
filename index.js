@@ -107,10 +107,7 @@ socketIO.on("connection", (socket) => {
   app.get("/api", (req, res) => {
     res.json(chatgroups);
   });
-  app.get('/ping', (req, res) => {
-    console.log('someone pinged here');
-    res.send('Pong');
-  });
+
   socket.on("newChatMessage", (data) => {
 
     const { currentChatMesage, groupIdentifier, currentUser, timeData, color, currentGroupName } = data;
@@ -151,4 +148,8 @@ socketIO.on("connection", (socket) => {
 
 http.listen(PORT, () => {
   console.log(`Server is listening on ${PORT}`);
+});
+
+app.get('/ping', (req, res) => {
+  res.send('Pong');
 });
