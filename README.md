@@ -43,8 +43,5 @@ Endpoints
 - `groupList` → Lista actualizada de grupos de chat.  
 - `groupChatMessage` → Recibe un mensaje nuevo en un grupo.  
 
-## 📜 Licencia  
-Este proyecto está bajo la licencia **MIT**.  
-
 🔗 **Repositorio:** [ServicioChatGAM](https://github.com/CamarillaGuanxi/ServicioChatGAM)
 
